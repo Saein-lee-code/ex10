@@ -9,14 +9,20 @@ import kr.itedu.ex10.Calc;
 class CalcTest {
 	@Test
 	void testA() {
-		assertEquals(5, Calc.sum(2, 3));				
-	}
-	@Test
-	void testB() {		
-		assertEquals(9, Calc.sum(4, 5));				
-	}
-	@Test
-	void testC() {		
-		assertEquals(13, Calc.sum(7, 6));		
-	}
+		int n1 = 8;
+		int n2 = 9;
+		assertEquals(17, Calc.sum(n1, n2));
+		
+		n1 = 10;
+		n2 = 20;
+		assertEquals(30, Calc.sum(n1, n2));
+		
+		n1 = 10;
+		n2 = 10;
+		assertEquals(20, Calc.sum(n1, n2));
+		
+		n1 = 9;
+		n2 = 8;
+		assertEquals(17, Calc.sum(n1, n2));
+	}	
 }
